@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="1020"
+      height="600"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+
+    <script type="text/javascript">
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+
+      // Membuat gradien
+      var gradient = ctx.createLinearGradient(0, 0, 0, 600);
+      gradient.addColorStop(0, "#f11de3");
+      gradient.addColorStop(0.5, "#4a2340");
+      gradient.addColorStop(1, "#755564");
+
+      // gard2
+      var gradient2 = ctx.createLinearGradient(0, 0, 0, 600);
+      gradient2.addColorStop(0, "#9723a0");
+      gradient2.addColorStop(1, "#803f70");
+
+      //Base Langit
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 1020, 600);
+
+      //Bangunan Samar
+      ctx.fillStyle = gradient2;
+      ctx.fillRect(0, 160, 40, 250);
+      ctx.fillRect(60, 100, 40, 250);
+      ctx.fillRect(150, 150, 110, 350);
+      ctx.fillRect(290, 180, 40, 350);
+      ctx.fillRect(410, 150, 80, 350);
+      ctx.fillRect(460, 220, 80, 350);
+      ctx.fillRect(600, 120, 50, 350);
+      ctx.fillRect(820, 160, 30, 350);
+      ctx.fillRect(920, 130, 30, 350);
+      ctx.fillRect(990, 260, 30, 350);
+
+      //Bangunan Belakang
+      ctx.fillStyle = "#6b2278";
+      ctx.fillRect(0, 210, 20, 200);
+
+      ctx.fillRect(240, 230, 90, 250);
+      ctx.fillRect(380, 190, 45, 250);
+      ctx.fillRect(500, 290, 45, 250);
+      ctx.fillRect(670, 160, 40, 250);
+      ctx.fillRect(770, 120, 40, 250);
+      ctx.fillRect(900, 250, 40, 250);
+
+      //Bangunan
+      ctx.fillStyle = "#46225f";
+      ctx.fillRect(0, 300, 40, 160);
+      ctx.fillRect(40, 260, 55, 170);
+      ctx.fillRect(40, 260, 55, 170);
+      ctx.fillRect(95, 210, 75, 270);
+      ctx.fillRect(95, 280, 115, 270);
+
+      ctx.fillRect(300, 295, 30, 200);
+      ctx.fillRect(330, 100, 50, 350);
+      ctx.fillRect(380, 230, 60, 200);
+      ctx.fillRect(440, 180, 30, 250);
+      ctx.fillRect(470, 230, 30, 200);
+      ctx.fillRect(500, 360, 40, 200);
+      ctx.fillRect(540, 180, 80, 250);
+      ctx.fillRect(620, 250, 20, 250);
+      ctx.fillRect(640, 200, 50, 250);
+      ctx.fillRect(690, 380, 50, 250);
+      ctx.fillRect(730, 280, 60, 250);
+      ctx.fillRect(790, 210, 70, 250);
+      ctx.fillRect(860, 320, 60, 250);
+      ctx.fillRect(940, 50, 50, 450);
+      ctx.fillRect(970, 320, 50, 200);
+
+      //Kaca
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(10, 370, 5, 5);
+      ctx.fillRect(20, 370, 5, 5);
+      ctx.fillRect(20, 330, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(30, 370, 5, 5);
+      ctx.fillRect(50, 270, 5, 5);
+      ctx.fillRect(50, 280, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(70, 280, 5, 5);
+      ctx.fillRect(60, 340, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(80, 370, 5, 5);
+      ctx.fillRect(70, 290, 5, 5);
+      ctx.fillRect(130, 220, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(150, 220, 5, 5);
+      ctx.fillRect(110, 240, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(130, 240, 5, 5);
+      ctx.fillRect(130, 260, 5, 5);
+      ctx.fillRect(150, 260, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(150, 280, 5, 5);
+      ctx.fillRect(110, 300, 5, 5);
+      ctx.fillRect(130, 300, 5, 5);
+      ctx.fillRect(110, 320, 5, 5);
+      ctx.fillRect(150, 320, 5, 5);
+      ctx.fillRect(130, 340, 5, 5);
+      ctx.fillRect(150, 340, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(110, 360, 5, 5);
+      ctx.fillRect(130, 360, 5, 5);
+      ctx.fillRect(130, 380, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(150, 380, 5, 5);
+      ctx.fillRect(110, 400, 5, 5);
+      ctx.fillRect(150, 400, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(190, 400, 5, 5);
+      ctx.fillRect(170, 385, 5, 5);
+      ctx.fillRect(195, 385, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(183, 305, 5, 5);
+      ctx.fillRect(195, 335, 5, 5);
+      ctx.fillRect(171, 334, 5, 5);
+
+      ctx.fillRect(339, 120, 5, 5);
+      ctx.fillRect(353, 120, 5, 5);
+      ctx.fillRect(367, 120, 5, 5);
+      ctx.fillRect(353, 140, 5, 5);
+      ctx.fillRect(367, 140, 5, 5);
+      ctx.fillRect(339, 160, 5, 5);
+      ctx.fillRect(353, 160, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(367, 160, 5, 5);
+      ctx.fillRect(339, 180, 5, 5);
+      ctx.fillRect(353, 180, 5, 5);
+      ctx.fillRect(339, 200, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(353, 200, 5, 5);
+      ctx.fillRect(367, 200, 5, 5);
+      ctx.fillRect(339, 220, 5, 5);
+      ctx.fillRect(353, 220, 5, 5);
+      ctx.fillRect(367, 220, 5, 5);
+      ctx.fillRect(339, 240, 5, 5);
+      ctx.fillRect(353, 240, 5, 5);
+      ctx.fillRect(367, 240, 5, 5);
+      ctx.fillRect(339, 260, 5, 5);
+      ctx.fillRect(367, 260, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(339, 280, 5, 5);
+      ctx.fillRect(353, 280, 5, 5);
+      ctx.fillRect(367, 280, 5, 5);
+      ctx.fillRect(339, 300, 5, 5);
+      ctx.fillRect(353, 300, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(367, 300, 5, 5);
+      ctx.fillRect(339, 320, 5, 5);
+      ctx.fillRect(353, 320, 5, 5);
+      ctx.fillRect(367, 320, 5, 5);
+      ctx.fillRect(339, 340, 5, 5);
+      ctx.fillRect(367, 340, 5, 5);
+      ctx.fillRect(339, 360, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(353, 360, 5, 5);
+      ctx.fillRect(367, 360, 5, 5);
+      ctx.fillRect(339, 380, 5, 5);
+      ctx.fillRect(353, 380, 5, 5);
+
+      ctx.fillRect(409, 250, 5, 5);
+      ctx.fillRect(423, 250, 5, 5);
+      ctx.fillRect(395, 270, 5, 5);
+      ctx.fillRect(409, 270, 5, 5);
+      ctx.fillRect(423, 270, 5, 5);
+      ctx.fillRect(395, 290, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(409, 290, 5, 5);
+      ctx.fillRect(423, 290, 5, 5);
+      ctx.fillRect(395, 310, 5, 5);
+      ctx.fillRect(409, 310, 5, 5);
+      ctx.fillRect(423, 310, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(395, 330, 5, 5);
+      ctx.fillRect(409, 330, 5, 5);
+      ctx.fillRect(423, 330, 5, 5);
+      ctx.fillRect(460, 300, 5, 5);
+      ctx.fillRect(480, 300, 5, 5);
+      ctx.fillRect(460, 325, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(480, 325, 5, 5);
+      ctx.fillRect(480, 350, 5, 5);
+      ctx.fillRect(460, 375, 5, 5);
+      ctx.fillRect(480, 375, 5, 5);
+      ctx.fillRect(460, 400, 5, 5);
+      ctx.fillRect(480, 400, 5, 5);
+
+      ctx.fillRect(580, 200, 5, 5);
+      ctx.fillRect(600, 200, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(560, 240, 5, 5);
+      ctx.fillRect(580, 240, 5, 5);
+      ctx.fillRect(600, 240, 5, 5);
+      ctx.fillRect(560, 280, 5, 5);
+      ctx.fillRect(580, 280, 5, 5);
+      ctx.fillRect(600, 280, 5, 5);
+      ctx.fillRect(560, 320, 5, 5);
+      ctx.fillRect(600, 320, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(560, 360, 5, 5);
+      ctx.fillRect(580, 360, 5, 5);
+      ctx.fillRect(600, 360, 5, 5);
+      ctx.fillRect(560, 400, 5, 5);
+      ctx.fillRect(580, 400, 5, 5);
+      ctx.fillRect(600, 400, 5, 5);
+
+      ctx.fillRect(630, 265, 5, 5);
+      ctx.fillRect(650, 265, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(670, 265, 5, 5);
+      ctx.fillRect(630, 295, 5, 5);
+      ctx.fillRect(650, 295, 5, 5);
+      ctx.fillRect(630, 325, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(650, 325, 5, 5);
+      ctx.fillRect(670, 325, 5, 5);
+      ctx.fillRect(630, 355, 5, 5);
+      ctx.fillRect(670, 355, 5, 5);
+      ctx.fillRect(630, 385, 5, 5);
+      ctx.fillRect(650, 385, 5, 5);
+      ctx.fillRect(670, 385, 5, 5);
+
+      ctx.fillRect(750, 300, 5, 5);
+      ctx.fillRect(770, 300, 5, 5);
+      ctx.fillRect(750, 320, 5, 5);
+      ctx.fillRect(770, 320, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(750, 340, 5, 5);
+      ctx.fillRect(770, 340, 5, 5);
+      ctx.fillRect(750, 360, 5, 5);
+      ctx.fillRect(770, 360, 5, 5);
+      ctx.fillRect(750, 380, 5, 5);
+      ctx.fillRect(750, 400, 5, 5);
+      ctx.fillRect(770, 400, 5, 5);
+      ctx.fillRect(750, 412, 25, 5);
+
+      ctx.fillRect(800, 220, 5, 5);
+      ctx.fillRect(820, 220, 5, 5);
+      ctx.fillRect(840, 220, 5, 5);
+      ctx.fillRect(800, 240, 5, 5);
+      ctx.fillRect(820, 240, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(800, 260, 5, 5);
+      ctx.fillRect(820, 260, 5, 5);
+      ctx.fillRect(840, 260, 5, 5);
+      ctx.fillRect(800, 280, 5, 5);
+      ctx.fillRect(820, 280, 5, 5);
+      ctx.fillRect(840, 280, 5, 5);
+      ctx.fillRect(810, 300, 5, 5);
+      ctx.fillRect(830, 300, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(810, 320, 5, 5);
+      ctx.fillRect(830, 320, 5, 5);
+      ctx.fillRect(830, 340, 5, 5);
+      ctx.fillRect(810, 360, 5, 5);
+      ctx.fillRect(830, 360, 5, 5);
+      ctx.fillRect(810, 380, 5, 5);
+      ctx.fillRect(830, 380, 5, 5);
+      ctx.fillRect(810, 400, 5, 5);
+      ctx.fillRect(830, 400, 5, 5);
+
+      ctx.fillRect(870, 340, 5, 5);
+      ctx.fillRect(890, 340, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(870, 360, 5, 5);
+      ctx.fillRect(870, 380, 5, 5);
+      ctx.fillRect(890, 380, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(870, 400, 5, 5);
+      ctx.fillRect(890, 400, 5, 5);
+
+      ctx.fillRect(950, 60, 5, 5);
+      ctx.fillRect(970, 60, 5, 5);
+      ctx.fillRect(950, 80, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(970, 80, 5, 5);
+      ctx.fillRect(950, 100, 5, 5);
+      ctx.fillRect(970, 100, 5, 5);
+      ctx.fillRect(950, 120, 5, 5);
+      ctx.fillRect(970, 120, 5, 5);
+      ctx.fillRect(950, 140, 5, 5);
+      ctx.fillRect(970, 140, 5, 5);
+      ctx.fillRect(970, 160, 5, 5);
+      ctx.fillRect(950, 180, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(970, 180, 5, 5);
+      ctx.fillRect(950, 200, 5, 5);
+      ctx.fillRect(970, 200, 5, 5);
+      ctx.fillRect(950, 220, 5, 5);
+      ctx.fillRect(970, 220, 5, 5);
+      ctx.fillRect(950, 240, 5, 5);
+      ctx.fillRect(970, 240, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(970, 260, 5, 5);
+      ctx.fillRect(950, 280, 5, 5);
+      ctx.fillRect(970, 280, 5, 5);
+      ctx.fillRect(950, 300, 5, 5);
+      ctx.fillRect(970, 300, 5, 5);
+      ctx.fillRect(950, 320, 5, 5);
+      ctx.fillRect(970, 320, 5, 5);
+      ctx.fillRect(950, 340, 5, 5);
+      ctx.fillRect(970, 340, 5, 5);
+      ctx.fillStyle = "#058291";
+      ctx.fillRect(970, 360, 5, 5);
+      ctx.fillRect(950, 380, 5, 5);
+      ctx.fillRect(970, 380, 5, 5);
+      ctx.fillStyle = "#03cfe6";
+      ctx.fillRect(950, 400, 5, 5);
+      ctx.fillRect(970, 400, 5, 5);
+
+      //Bawah
+      ctx.fillStyle = "#2d2753";
+      ctx.fillRect(0, 560, 1020, 100);
+
+      ctx.fillStyle = "#5727af";
+      ctx.fillRect(0, 510, 1020, 50);
+
+      //tanah
+      ctx.fillStyle = "#5837aa";
+      ctx.fillRect(180, 580, 5, 5);
+      ctx.fillRect(200, 580, 5, 5);
+      ctx.fillRect(210, 570, 5, 5);
+      ctx.fillRect(225, 583, 5, 5);
+      ctx.fillRect(190, 590, 5, 5);
+      ctx.fillRect(213, 590, 5, 5);
+
+      ctx.fillRect(500, 570, 25, 5);
+      ctx.fillRect(520, 580, 20, 5);
+
+      ctx.fillRect(800, 575, 45, 5);
+      ctx.fillRect(830, 585, 30, 5);
+
+      //Air
+      ctx.fillStyle = "#432b97";
+      ctx.fillRect(0, 510, 1020, 10);
+
+      ctx.fillStyle = "#5f50e1";
+      ctx.fillRect(0, 460, 1020, 50);
+
+      ctx.fillStyle = "#432b97";
+      ctx.fillRect(0, 450, 1020, 10);
+
+      ctx.fillStyle = "#5e34b3";
+      ctx.fillRect(0, 425, 1020, 25);
+
+      //Arus Air
+      ctx.fillStyle = "#378ef9";
+      ctx.fillRect(40, 490, 40, 7);
+      ctx.fillRect(85, 490, 40, 7);
+      ctx.fillRect(60, 480, 40, 7);
+      ctx.fillRect(200, 460, 30, 7);
+      ctx.fillRect(235, 460, 30, 7);
+      ctx.fillRect(320, 480, 30, 7);
+      ctx.fillRect(360, 480, 30, 7);
+      ctx.fillRect(335, 490, 30, 7);
+      ctx.fillRect(450, 500, 30, 7);
+      ctx.fillRect(800, 500, 30, 7);
+      ctx.fillRect(840, 500, 20, 7);
+      ctx.fillRect(950, 480, 20, 7);
+      ctx.fillRect(910, 480, 30, 7);
+      ctx.fillRect(930, 490, 30, 7);
+      ctx.fillRect(730, 480, 20, 7);
+      ctx.fillRect(690, 480, 30, 7);
+      ctx.fillRect(710, 490, 30, 7);
+      ctx.fillRect(685, 490, 20, 7);
+      ctx.fillRect(590, 460, 30, 7);
+      ctx.fillRect(570, 470, 25, 7);
+      ctx.fillRect(530, 460, 45, 7);
+
+      ctx.fillRect(0, 425, 100, 3);
+      ctx.fillRect(120, 425, 20, 3);
+      ctx.fillRect(150, 425, 200, 3);
+      ctx.fillRect(380, 425, 20, 3);
+      ctx.fillRect(420, 425, 150, 3);
+      ctx.fillRect(590, 425, 15, 3);
+      ctx.fillRect(620, 425, 180, 3);
+      ctx.fillRect(820, 425, 100, 3);
+      ctx.fillRect(950, 425, 50, 3);
+
+      ctx.fillStyle = "#44215e";
+      ctx.fillRect(0, 432, 60, 18);
+      ctx.fillRect(70, 432, 120, 18);
+      ctx.fillRect(200, 432, 120, 18);
+      ctx.fillRect(330, 432, 120, 18);
+      ctx.fillRect(460, 432, 120, 18);
+      ctx.fillRect(590, 432, 120, 18);
+      ctx.fillRect(720, 432, 120, 18);
+      ctx.fillRect(850, 432, 120, 18);
+      ctx.fillRect(980, 432, 60, 18);
+    </script>
+  </body>
+</html>
